@@ -1,0 +1,10 @@
+[bundle]
+outfile = "dist/cli.js"
+format = "esm"
+
+[build]
+root = "src"
+entrypoints = ["cli.ts"]
+
+[install]
+Optional = true

@@ -1,0 +1,45 @@
+{
+  "name": "kutti",
+  "version": "0.1.0",
+  "description": "A Bun-native OpenCode alternative - autonomous AI coding assistant CLI",
+  "type": "module",
+  "bin": {
+    "kutti": "./dist/cli.js"
+  },
+  "scripts": {
+    "dev": "bun run src/cli.ts",
+    "build": "bun build ./src/cli.ts --outfile dist/cli.js",
+    "build:compile": "bun build ./src/cli.ts --compile --outfile kutti",
+    "test": "bun test",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.28.0",
+    "@google/generative-ai": "^0.21.0",
+    "axios": "^1.7.2",
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "dotenv": "^16.4.5",
+    "encoding": "^0.1.13",
+    "groq-sdk": "^0.4.1",
+    "keytar": "^8.0.0",
+    "markdown-it": "^14.1.0",
+    "openai": "^4.52.0",
+    "simple-git": "^3.24.0",
+    "toml": "^3.0.0",
+    "yaml": "^2.4.1"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/markdown-it": "^14.1.2",
+    "@types/node": "^20.12.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  }
+}

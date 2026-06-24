@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+.bun/
+dist/
+build/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Kutti config & credentials
+~/.kutti/
+.kutti/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build artifacts
+*.tsbuildinfo
+kutti
+kutti.exe
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Logs
+*.log
+npm-debug.log*
+bun-debug.log*
